@@ -1,0 +1,41 @@
+// Dev Server
+dev server: devvm353.prn2.facebook.com
+http://www.pboocock.devvm353.prn2.facebook.com.facebook.com/
+
+// IRC
+With identd: 907b-2135-9547-8bac
+Without: pboocock:907b-2135-9547-8bac
+
+
+https://our.pboocock.devvm353.prn2.facebook.com/intern/bootcamp/pboocock/frontend/
+
+https://our.pboocock.devvm353.prn2.intern.facebook.com/intern/data/search/?_all=dim_one_row
+
+https://our.pboocock.sb.facebook.com/intern/bootcamp/accessing_data_exercise/pboocock/
+
+XInternSecondAssignmentXPboocockController.php
+
+cd /tmp/
+cp ~/Library/Preferences/com.googlecode.iterm2.plist .
+plutil -convert xml1 com.googlecode.iterm2.plist
+vi com.googlecode.iterm2.plist
+
+# Now remove the color schemes in the <key> and <dict> tags, 
+# to make it easier, record a macro in vi to remove the key (e.g: Desert/Solarized) using `dd`,
+# and then remove its color dict with `dat` (delete around tag), and repeat the macro until 
+# all color schemes you want to delete is gone.
+
+# Save the file, and copy it back:
+
+cp com.googlecode.iterm2.plist ~/Library/Preferences/
+
+# Note that iTerm2 has 'fallback' configuration in case something is wrong,
+# You might want to remove them as well:
+
+rm ~/Library/Preferences/iTerm2.plist
+rm ~/Library/Preferences/net.sourceforge.iTerm.plist
+
+# Now reload the configuration
+
+cd ~/Library/Preferences/
+defaults read com.googlecode.iterm2
